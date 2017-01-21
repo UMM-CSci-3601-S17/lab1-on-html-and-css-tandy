@@ -1,20 +1,27 @@
 body {
     max-width: 1000px;
     margin: 0 auto;
+    /* CSS3 feature - we use this because we don't want content-base box sizing */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Overpass Mono', monospace;
+    background-color: #FCF7E1;
 }
 
-a:visited {
-    color: black;
+a, a:visited {
+    color: #eee;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: #36424a;
     padding: 16px;
 }
 
@@ -24,29 +31,18 @@ nav > ul > li {
 
 nav > ul > li > a {
     padding: 16px;
-    font-size : 25px;
+    font-size : 20px;
     text-decoration: none;
 }
 
-h1 {
+.main-title, .sub-title {
+    font-family: 'Indie Flower', cursive;
+}
+
+.main-title {
     font-size: 50px;
 }
 
-h2 {
-    color: black;
-    font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
-}
-
-p {
-    font-family: monospace;
-}
-
-/*img {*/
-    /*display: block;*/
-    /*width: 50%;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-/*}*/
 .top-row {
     margin: 0 auto;
     text-align: center;
@@ -58,15 +54,10 @@ p {
 }
 
 .bottom-row {
-    display: inline;
-    width: 50%;
+    display: inline-block;
+    width: 40%;
 }
 
-.small-image {
-    /*width: 30%;*/
-    /*display: block;*/
-}
-
-figcaption {
-    display: inline;
+footer {
+    border-top: solid black 1px;
 }
