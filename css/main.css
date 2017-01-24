@@ -9,6 +9,10 @@ body {
     background-color: #FCF7E1;
 }
 
+main {
+    margin-bottom: 40px;
+}
+
 a, a:visited {
     color: #eee;
 }
@@ -37,10 +41,15 @@ nav > ul > li > a {
 
 .main-title, .sub-title {
     font-family: 'Indie Flower', cursive;
+    margin: 0.2em;
 }
 
 .main-title {
     font-size: 2.75em;
+}
+
+.sub-title {
+    margin-bottom: 20px;
 }
 
 .top-row {
@@ -54,8 +63,22 @@ nav > ul > li > a {
 }
 
 .bottom-row {
+    width: 100%;
+}
+
+.col-6 {
     display: inline-block;
-    width: 40%;
+    width: 49%;
+}
+
+.small-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerText {
+    text-align: center;
 }
 
 footer {
